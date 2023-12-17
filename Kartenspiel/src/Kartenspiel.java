@@ -24,7 +24,7 @@ public class Kartenspiel {
          * Bei statischer Größe und häufigen Zugriffen kann ein Feld vorteilhaft sein, während für dynamische Größenanpassung
          * oder komplexe Operationen andere Datenstrukturen wie ArrayLists in Betracht gezogen werden sollten.
          *
-         * Hier ist ein Feld von Objekten zweifellos sinnvoll, da es in einem Kartenspiel eine feste Größe an Karten
+         * Hier ist ein Feld von Objekten zweifellos sinnvoll und vorteilhaft, da es in einem Kartenspiel eine feste Größe an Karten
          * gibt. Es kommen keine neuen Karten dazu.
          */
         karten = new Karte[52];
