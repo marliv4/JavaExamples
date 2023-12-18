@@ -50,7 +50,7 @@ public class Auto {
          * 
          * Da ein Auto beim Entzug des Motors seinen grundlegenden Sinn, welcher darin besteht, Personen zu transportieren, verliert, habe ich mich hier für die 
          * Komposition entschieden. Ein Auto ohne Motor ist für mich nur ein "Käfig" aus Metall.
-         * Außerdem: Wenn ein Auto komplett abbrennt, brennt sein Motor damit auch ab
+         * Außerdem: Wenn ein Auto komplett abbrennt, brennt sein Motor damit auch ab.
          * 
          * Deshalb bin ich der Meinung, dass hier die Komposition angebrachter ist als die Aggregation. Diese würde aber,
          * was die Implementation angeht, natürlich auch funktionieren.
