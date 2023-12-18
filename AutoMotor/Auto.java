@@ -39,7 +39,19 @@ public class Auto {
         this.marke = marke;
         this.baujahr = baujahr;
 
-        // Komposition
+        /*
+         * In diesem Fall habe ich mich für die Klassenbeziehung "Komposition" entschieden. Eine Aggregation ginge auch.
+         * Allerdings ist die Frage: ist ein Auto immer noch ein Auto, wenn ihm das Motor entzogen wird?
+         
+         * Duden definiert ein Auto als (https://www.duden.de/rechtschreibung/Auto_Fahrzeug):
+         * 
+         * "durch einen Motor angetriebenes Straßenfahrzeug mit gummibereiften Rädern und offener oder geschlossener Karosserie zum **Transport** von 
+         * Personen oder Gütern; Kraftwagen, Kraftfahrzeug, Automobil"
+         * 
+         * Da ein Auto beim Entzug des Motors seinen grundlegenden Sinn, welcher darin besteht, Personen zu transportieren, verliert, habe ich mich hier für die 
+         * Komposition entschieden. Ein Auto ohne Motor ist für mich nur ein "Käfig" aus Metall. Deshalb bin ich der Meinung, dass hier die Komposition
+         * angebrachter ist als die Aggregation. Diese würde aber natürlich auch funktionieren.
+         */
         motor = new Motor(motorTyp, ps);
     }
 
