@@ -6,6 +6,7 @@
  *  -  baujahr: Ein Integer, der das Baujahr des Autos repräsentiert
  *  -  motor: Ein Objekt der Klasse Motor, das den Motor des Autos repräsentiert
 
+*
 * Konstruktor: Der Konstruktor der Klasse nimmt vier Parameter: marke, baujahr, motorTyp und ps.
 * Die ersten beiden Parameter werden verwendet, um die entsprechenden Attribute der Klasse zu initialisieren.
 * Die letzten beiden Parameter werden verwendet, um ein neues Motor-Objekt zu erstellen.
@@ -77,6 +78,10 @@ public class Auto {
 
     public Motor getMotor() {
         return motor;
+    }
+
+    public void fahre(int strecke) {
+        // ...
     }
 
 }
