@@ -5,12 +5,14 @@ class Tier {
 }
 
 class Vogel extends Tier {
+    @Override
     public void bewegtSich() {
         System.out.println("Der Vogel fliegt.");
     }
 }
 
 class Wurm extends Tier {
+    @Override
     public void bewegtSich() {
         System.out.println("Der Wurm kriecht.");
     }
