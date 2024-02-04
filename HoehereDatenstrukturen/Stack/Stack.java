@@ -17,8 +17,6 @@ public class Stack<T> {
 
     public void pop() {
         top--;
-        // Eigentlich braucht man die "top" Variable nicht speichern,
-        // da die Sachen wirklich auch gelöscht werden und das Array nicht nur durch "top" eingeengt wird.
         arr.remove(arr.size() - 1);
     }
 
@@ -31,6 +29,10 @@ public class Stack<T> {
         for (int i = sz; i >= 0; i--) {
             System.out.println(arr.get(i));
         }
+    }
+
+    public T peek() {
+        return arr.get(top);
     }
 
     public static void main(String[] args) {
@@ -46,5 +48,11 @@ public class Stack<T> {
         s.pop();
         s.pop();
         s.print(); // Stack ist leer.
+
+        s.push(10);
+        s.push(20);
+        s.print(); // 20 10
+
+        System.out.println(s.peek()); // 20
     }
 }
